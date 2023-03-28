@@ -19,23 +19,23 @@
   const blocks = [
     {
       title: 'Curso Oratoria',
-      img: 'curso_oratoria.png',
+      img: 'https://res.cloudinary.com/dnnqj1pxm/image/upload/v1679968824/demo-maipistiner/curso_oratoria_blosd4.webp',
       class: 'col-span-2',
     },
     {
       title: 'Catálogo de cursos',
-      img: 'catalogo_cursos.png',
+      img: 'https://res.cloudinary.com/dnnqj1pxm/image/upload/v1679968824/demo-maipistiner/catalogo_cursos_zf0uca.webp',
       class: '',
       multiple: true,
     },
     {
       title: 'Acceso alumnos',
-      img: 'acceso_alumnos.png',
+      img: 'https://res.cloudinary.com/dnnqj1pxm/image/upload/v1679968825/demo-maipistiner/acceso_alumnos_d22wzt.webp',
       class: '',
     },
     {
       title: 'Sobre mí',
-      img: 'sobre_mi.png',
+      img: 'https://res.cloudinary.com/dnnqj1pxm/image/upload/v1679968825/demo-maipistiner/sobre_mi_tu8w7v.webp',
       class: '',
     },
     {
@@ -45,12 +45,12 @@
     },
     {
       title: 'Mi podcast',
-      img: 'podcast.png',
+      img: 'https://res.cloudinary.com/dnnqj1pxm/image/upload/v1679968824/demo-maipistiner/podcast_sfu8hm.webp',
       class: '',
     },
     {
       title: 'Blog de la academia',
-      img: 'blog.png',
+      img: 'https://res.cloudinary.com/dnnqj1pxm/image/upload/v1679968824/demo-maipistiner/blog_u2bzif.webp',
       class: 'col-span-2',
     },
   ]
@@ -61,7 +61,9 @@
 <svelte:window bind:scrollY />
 <img
   class="opacity-80 -z-10 fixed h-[80vh] top-0 w-full object-cover"
-  src="banner.png"
+  src="https://res.cloudinary.com/dnnqj1pxm/image/upload/v1679968829/demo-maipistiner/banner-min_qmv1hb.webp"
+  loading="lazy"
+  decoding="async"
   alt="A banner with Mai Pistiner on it."
 />
 <main class="relative h-[80vh]">
@@ -99,8 +101,10 @@
         </div>
         <img
           class="bottom-0 right-0 translate-y-8 translate-x-[30%] absolute h-48"
-          src="trending_up.png"
+          src="https://res.cloudinary.com/dnnqj1pxm/image/upload/v1679968825/demo-maipistiner/trending_up_amnzs1.webp"
           alt="trending up"
+          loading="lazy"
+          decoding="async"
         />
       </div>
     </div>
@@ -151,6 +155,8 @@
               class="inset-0 object-cover h-full w-full"
               src={block.img}
               alt={block.title}
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
@@ -171,6 +177,8 @@
     alt="Colorful banner"
     src="waves.svg"
     class="-z-10 absolute left-0 w-full h-full object-cover"
+    loading="lazy"
+    decoding="async"
   />
   <section class=" p-8 pr-64 flex items-start flex-col">
     <p class="text-8xl pb-8 font-nunito font-black tracking-wide text-pink-500">
@@ -192,8 +200,10 @@
     </p>
     <img
       class="h-96"
-      src="brands.webp"
+      src="https://res.cloudinary.com/dnnqj1pxm/image/upload/v1679968824/demo-maipistiner/brands_kzb57v.webp"
       alt="The brands that trust Mai Pistiner."
+      loading="lazy"
+      decoding="async"
     />
   </section>
 </main>
